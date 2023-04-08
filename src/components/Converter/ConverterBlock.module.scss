@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto 10px;
+  .block {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 100px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    .currencies {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+
+        li {
+          display: inline-block;
+          padding: 10px 25px;
+          cursor: pointer;
+          letter-spacing: 2px;
+          transition: all ease-in-out 0.1s;
+          &:hover {
+            background-color: #c7e6da;
+          }
+        }
+
+        .moreCur {
+          padding: 15px;
+          width: 400px;
+          position: absolute;
+          margin: 38px 0;
+          margin-left: 500px;
+          background-color: white;
+          border-radius: 10px;
+          border: 1px rgba(0, 0, 0, 0.3) solid;
+        }
+      }
+    }
+    input {
+      width: 270px;
+      padding: 30px 20px;
+      font-size: 48px;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      outline: none;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
